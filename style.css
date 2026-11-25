@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+background: #080808;
+color: white;
+font-family: Arial, sans-serif;
+line-height: 1.7;
+}
+
+header {
+background: #111;
+padding: 20px 6%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+border-bottom: 1px solid gold;
+}
+
+.logo {
+font-size: 22px;
+font-weight: bold;
+color: white;
+}
+
+.logo span,
+.hero h1 span {
+color: gold;
+}
+
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 18px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: gold;
+}
+
+section {
+padding: 80px 8%;
+text-align: center;
+}
+
+.hero {
+min-height: 85vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.welcome {
+color: gold;
+letter-spacing: 5px;
+}
+
+.hero h1 {
+font-size: clamp(30px, 7vw, 65px);
+margin: 15px 0;
+}
+
+.hero h2 {
+color: gold;
+margin-bottom: 15px;
+}
+
+.hero p {
+max-width: 650px;
+}
+
+section h2 {
+color: gold;
+font-size: 30px;
+margin-bottom: 30px;
+}
+
+#about p,
+#contact p {
+max-width: 750px;
+margin: 12px auto;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+margin-top: 30px;
+}
+
+.card {
+background: #151515;
+border: 1px solid #b89b30;
+border-radius: 14px;
+padding: 30px 20px;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-7px);
+border-color: gold;
+box-shadow: 0 8px 25px rgba(255, 215, 0, 0.12);
+}
+
+.card h3 {
+color: gold;
+margin-bottom: 15px;
+}
+
+.card p {
+color: #ccc;
+}
+
+.btn {
+display: inline-block;
+background: gold;
+color: black;
+padding: 13px 28px;
+margin-top: 25px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: white;
+transform: translateY(-3px);
+}
+
+footer {
+background: #111;
+border-top: 1px solid gold;
+text-align: center;
+padding: 25px;
+color: #ccc;
+}
+
+@media (max-width: 700px) {
+header {
+flex-direction: column;
+gap: 15px;
+}
+
+nav {
+    justify-content: center;
+    gap: 12px;
+}
+
+section {
+    padding: 55px 6%;
+}
+
+.hero {
+    min-height: 75vh;
+}
+
+}
